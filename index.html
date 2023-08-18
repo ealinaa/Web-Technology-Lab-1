@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 1</title>
+    <!-- bootstrap icon cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Fontaweseom icon cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Css link -->
+    <link rel="stylesheet" href="syles.css">
+    <!-- Javascript link -->
+    <script src="javascripts.js"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+</head>
+
+<body>
+    <div class="container">
+        <h1>Search Github Profile</h1>
+        <label class="search-div">
+            <input type="text" placeholder="Enter Your UserName" id="loginid">
+            <button type="submit" class="search-btn" onclick="getData()">Search</button>
+            <!-- <button type="submit" class="search-button" onclick="fetchData()">Search</button> -->
+
+        </label>
+       <div class="user-profile" id="user_details">
+           <div class="user-img">
+               <img src="image/avatar1.jpg" alt="user image" class="uavatar">
+           </div>
+           <div class="user-info">
+              
+               <div class="username">
+                   <h3 id="uname">User Name</h3>
+                   <p id="date">Joined Date</p>
+               </div>
+               <div class="followrepo">
+                   <div class="repo">
+                       <h4>Repos</h4>
+                       <p id="gitrepo">0</p>
+                   </div>
+                   <div class="Followers">
+                       <h4>Followers</h4>
+                       <p id="gitfoller">0</p>
+                   </div>
+                   <div class="Following">
+                       <h4>Following</h4>
+                       <p id="gitfollow">0</p>
+                   </div>
+                </div>
+                <div class="socials">
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p id="gitlocation">Not Available</p>
+                    </div>
+                    <div class="location">
+                        <i class="fa-brands fa-twitter"></i>
+                        <p id="gittwitter">Not Available</p>
+                    </div>
+                    <div class="location">
+                        <i class="fa-brands fa-github"></i>
+                        <p id="gitprofile">Not Available</p>
+                    </div>
+                    <div class="location">
+                        <i class="fa-solid fa-building"></i>
+                        <p id="gitwork">Not Available</p>
+                    </div>
+                </div>
+            </div>
+        </div>          
+    </div>
+</body>
+</html>
